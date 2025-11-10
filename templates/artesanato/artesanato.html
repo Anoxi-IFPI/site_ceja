@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesanato Nordestino - Feira do Conhecimento</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/artesanato/artesanato.css') }}">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+
+    <main class="container">
+        <div class="content-page">
+            <h2>Artesanato Nordestino como Empreendedorismo</h2>
+            <p class="intro">
+                Mais do que expressão cultural, o artesanato é uma poderosa fonte de renda e empreendedorismo no Nordeste. De cooperativas de rendeiras a mestres ceramistas, a arte manual se transforma em negócio, preserva a tradição e gera desenvolvimento local.
+            </p>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/S5iZvndeYgE" title="Feira valoriza o empreendedorismo nordestino" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <a href="httpsG1..." target="_blank" class="g1-link">
+                <strong>Exemplo Local (G1 Piauí):</strong> Conheça a história da Central de Artesanato de Teresina. (Clique para ler)
+            </a>
+
+            <div class="image-gallery">
+                <h3>Formas de Empreendedorismo</h3>
+
+                <div class="image-item">
+                    <img src="/static/images/artesanato/boneco.jpg" alt="Bonecos de Barro">
+                    <p class="caption">
+                        <strong>Arte em Barro (Cerâmica):</strong> O legado de Mestre Vitalino...
+                    </p>
+                </div>
+
+                <div class="image-item">
+                    <img src="/static/images/artesanato/bilro.png" alt="Renda de Bilro">
+                    <p class="caption">
+                        <strong>Rendas (Bilro, Renascença):</strong> Cooperativas e associações...
+                    </p>
+                </div>
+                
+                <div class="image-item">
+                    <img src="/static/images/artesanato/xilografura.png" alt="Xilogravura">
+                    <p class="caption">
+                        <strong>Xilogravura e Couro:</strong> A arte do sertão...
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    {% include 'rodape.html' %}
+
+</body>
+</html>

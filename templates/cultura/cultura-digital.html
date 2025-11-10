@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura Digital - Feira do Conhecimento</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cultura/cultura.css') }}">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+
+    <main class="container">
+        <div class="content-page">
+            <h2>Cultura Nordestina na Era Digital</h2>
+            <p class="intro">
+                O empreendedorismo nordestino agora ocupa também o espaço digital. Influenciadores, podcasters e lojas virtuais usam a internet para alcançar o mundo, provando que a tecnologia é uma grande aliada da tradição.
+            </p>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/IlicoaSC3mY" title="Podcast Nordestino" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="image-gallery">
+                <h3>Formas de Empreendedorismo</h3>
+
+                <div class="image-item">
+                    <img src="https://images.pexels.com/photos/5082579/pexels-photo-5082579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Podcast">
+                    <p class="caption">
+                        <strong>Podcasts e Criação de Conteúdo:</strong> Projetos como o "Podcast Nordestino", da Paraíba, usam a internet para divulgar histórias e personalidades da região, monetizando através de patrocínios e parcerias.
+                    </p>
+                </div>
+
+                <div class="image-item">
+                    <img src="https://images.pexels.com/photos/4050299/pexels-photo-4050299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="E-commerce">
+                    <p class="caption">
+                        <strong>E-commerce e Hubs Digitais:</strong> Plataformas online, como o hub "Nordestesse", conectam artesãos e produtores locais a compradores de todo o país, superando barreiras geográficas e impulsionando as vendas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {% include 'rodape.html' %}
+
+</body>
+</html>

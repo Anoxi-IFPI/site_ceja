@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festividades e tradições culturais nordestinas</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cultura/cultura.css') }}">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+{% include 'navbar.html' %}
+    <main class="container">
+        <div class="content-page">
+            <h2>Festividades e tradições culturais nordestinas</h2>
+            <p class="intro">
+                A "economia da festa" é um motor gigantesco no Nordeste. O São João, o Carnaval e outros festivais criam uma cadeia produtiva que emprega músicos, dançarinos, produtores e professores de dança, transformando a alegria em profissão.
+            </p>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/NwMtT2jasMM" title="Dança nordestina" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="image-gallery">
+                <h3>Formas de Empreendedorismo</h3>
+
+                <div class="image-item">
+                    <img src="/static/images/cultura/forro2.png" alt="Forró">
+                    <p class="caption">
+                        <strong>Músicos e Bandas:</strong> Artistas e bandas que tocam ritmos como forró, baião e xote (como o Trio Nordestino) têm um mercado de shows e eventos, especialmente durante os festejos juninos, que são um grande negócio.
+                    </p>
+                </div>
+
+                <div class="image-item">
+                    <img src="/static/images/cultura/reisado.png" alt="Dança de Frevo">
+                    <p class="caption">
+                        <strong>Grupos e Escolas de Dança:</strong> Professores e grupos de dança (como o do vídeo) são contratados para apresentações em eventos, festivais e ensinam em escolas, preservando a cultura e gerando renda.
+                    </p>
+                </div>
+
+                <div class="image-item">
+                    <img src="/static/images/cultura/festaJunina.png" alt="Dança de Frevo">
+                    <p class="caption">
+                        <strong>Grupos e Escolas de Dança:</strong> Professores e grupos de dança (como o do vídeo) são contratados para apresentações em eventos, festivais e ensinam em escolas, preservando a cultura e gerando renda.
+                    </p>
+                </div>
+
+                <div class="image-item">
+                    <img src="/static/images/cultura/bunbaMeuBoi.png" alt="Dança de Frevo">
+                    <p class="caption">
+                        <strong>Grupos e Escolas de Dança:</strong> Professores e grupos de dança (como o do vídeo) são contratados para apresentações em eventos, festivais e ensinam em escolas, preservando a cultura e gerando renda.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+  
+{% include 'rodape.html' %}
+</body>
+</html>

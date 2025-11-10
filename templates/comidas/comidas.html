@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinária Nordestina - Feira do Conhecimento</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/comidas/comidas.css') }}">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+
+    <main class="container">
+        <div class="content-page">
+            <h2>Culinária Nordestina como Empreendedorismo</h2>
+            <p class="intro">
+                A culinária nordestina é um dos maiores vetores de empreendedorismo da região. Desde a comida de rua, como o acarajé e a tapioca, até os grandes restaurantes e a exportação de produtos como a castanha de caju, o sabor se transforma em negócio.
+            </p>
+
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/3VmjA8mr-YQ" title="Culinária Nordestina Autêntica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="image-gallery">
+                <h3>Formas de Empreendedorismo</h3>
+
+                <div class="image-item">
+                    <img src="/static/images/comidas/acaraje.png" alt="Acarajé">
+                    <p class="caption">
+                        <strong>Comida de Rua:</strong> A Baiana do Acarajé é o exemplo clássico...
+                    </p>
+                </div>
+
+                <div class="image-item">
+                    <img src="/static/images/comidas/cuscuz2.png" alt="Mercado">
+                    <p class="caption">
+                        <strong>Mercados e Restaurantes:</strong> Os mercados públicos...
+                    </p>
+                </div>
+
+                 <div class="image-item">
+                    <img src="/static/images/comidas/tapioca.png" alt="Tapioca">
+                    <p class="caption">
+                        <strong>Tapiocas:</strong> Beju nordestino
+                    </p>
+                </div>
+
+                 <div class="image-item">
+                    <img src="/static/images/comidas/cocada2.png" alt="Cocada">
+                    <p class="caption">
+                        <strong>Mercados e Restaurantes:</strong> Os mercados públicos...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {% include 'rodape.html' %}
+
+</body>
+</html>
